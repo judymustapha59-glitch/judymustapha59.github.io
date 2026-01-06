@@ -1,0 +1,46 @@
+ <!-- Admin Analytics Page -->
+            <section id="admin-page" class="page">
+              <h1 class="adminanalyticpage-h1">Admin Dashboard</h1>
+              <div class="content-section">
+                <h1>Admin Analytics</h1>
+
+                <div class="stats-grid">
+                  <div class="stat-card">
+                    <h3>Total Revenue</h3>
+                    <p>$<span id="stat-revenue">0.00</span></p>
+                  </div>
+
+                  <div class="stat-card">
+                    <h3>Total Orders</h3>
+                    <p><span id="stat-orders">0</span></p>
+                  </div>
+
+                  <div class="stat-card">
+                    <h3>Items Sold</h3>
+                    <p><span id="stat-items">0</span></p>
+                  </div>
+                </div>
+
+                <h3>Top Products</h3>
+                <div id="product-chart" class="bar-chart"></div>
+
+                <h3>Daily Sales</h3>
+                <div class="date-filters">
+                  <input type="date" id="date-from">
+                  <input type="date" id="date-to">
+                  <button class="btn" onclick="renderAdminAnalytics()">Apply</button>
+                </div>
+                <div id="sales-chart" class="bar-chart"></div>
+
+                <h3>Checkout Funnel</h3>
+                <ul id="conversion-funnel"></ul>
+
+                <h3>Inventory Status</h3>
+                <ul id="inventory-list"></ul>
+
+                <h3>Recent Orders</h3>
+                <ul id="orders-list"></ul>
+
+                <div id="order-details" class="order-details hidden"></div>
+              </div>
+            </section>
