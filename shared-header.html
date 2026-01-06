@@ -1,0 +1,54 @@
+<!-- Shared Header & Navigation -->
+
+<!-- Demo Mode Banner -->
+<div id="demo-banner" class="demo-banner" role="banner">
+    <span class="demo-text">✓ Demo mode: Prices & products are editable</span>
+    <button id="demo-banner-close" class="demo-banner-close" aria-label="Close demo banner">×</button>
+</div>
+
+<!-- Header -->
+<header>
+    <div class="header-content">
+        <div class="logo">
+            <span class="logo-text">ALBARKA</span>
+        </div>
+        <h1>ALBARKA STORE</h1>
+        <button
+            id="theme-toggle"
+            class="theme-toggle"
+            aria-label="Toggle dark mode"
+            aria-pressed="false"
+        >
+            🌙
+        </button>
+        <button
+            id="demo-toggle"
+            class="demo-toggle"
+            aria-label="Toggle demo banner"
+            aria-pressed="true"
+            title="Toggle demo banner"
+        >
+            Demo Admin
+        </button>
+        <span id="admin-indicator" class="admin-indicator" aria-hidden="true">ADMIN</span>
+    </div>
+</header>
+
+<!-- Navigation -->
+<nav class="navbar">
+    <div class="nav-content">
+        <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+        <div class="nav-links">
+            <a href="index.html" class="nav-link" data-page="home">Home</a>
+            <a href="products.html" class="nav-link" data-page="products">Products</a>
+            <a href="orders.html" class="nav-link" data-page="orders">Orders</a>
+            <a href="about.html" class="nav-link" data-page="about">About</a>
+            <a href="contact.html" class="nav-link" data-page="contact">Contact</a>
+            <a href="admin.html" class="nav-link" data-page="admin">Admin</a>
+        </div>
+        <button id="cart-btn" class="cart-icon-btn" aria-label="Open shopping cart" title="Open cart">
+            🛒
+            <span class="cart-badge" id="cart-count" aria-live="polite">0</span>
+        </button>
+    </div>
+</nav>
