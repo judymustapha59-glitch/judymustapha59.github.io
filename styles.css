@@ -1,4 +1,4 @@
-/* ==================== GLOBAL STYLES ==================== */
+/*  GLOBAL STYLES  */
 * {
     margin: 0;
     padding: 0;
@@ -20,7 +20,7 @@ body {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* ==================== THEME VARIABLES ==================== */
+/*  THEME VARIABLES  */
 :root {
     --bg-primary: #f8f9fa;
     --bg-secondary: #ffffff;
@@ -32,7 +32,7 @@ body {
     --nav-bg: linear-gradient(90deg, #ffffff 0%, #f8fbff 100%);
     --nav-border: #0066cc;
     --accent-color: #0066cc;
-    --rating-color: #f4b400; /* gold */
+    --rating-color: #f4b400;
 }
 
 body[data-theme="dark"] {
@@ -50,7 +50,7 @@ body[data-theme="dark"] {
     --rating-color: #ffd369;
 }
 
-/* ==================== HEADER ==================== */
+/*  HEADER  */
 header {
     position: sticky;
     top: 0;
@@ -129,7 +129,7 @@ header h1 {
     background: linear-gradient(90deg, rgba(0,0,0,0.03), rgba(0,0,0,0.02));
 }
 
-/* Admin indicator badge (visible when demo/admin mode is enabled) */
+/* Admin indicator badge */
 .admin-indicator {
     display: none;
     margin-left: 0.5rem;
@@ -147,7 +147,7 @@ body[data-demo-admin="true"] .admin-indicator { display: inline-block; }
 /* Admin-only controls hidden when not in demo admin */
 body[data-demo-admin="false"] .admin-only { display: none !important; }
 
-/* ==================== NAVIGATION ==================== */
+/*  NAVIGATION  */
 .navbar {
     position: sticky;
     top: 72px;
@@ -167,7 +167,6 @@ body[data-demo-admin="false"] .admin-only { display: none !important; }
     justify-content: flex-start;
 }
 
-/* Mobile nav toggle and responsive nav-links container */
 .nav-toggle {
     display: none;
     background: none;
@@ -251,7 +250,7 @@ body[data-demo-admin="false"] .admin-only { display: none !important; }
     50% { transform: scale(1.1); }
 }
 
-/* ==================== MODALS ==================== */
+/*  MODALS  */
 .modal, .modal-overlay {
     display: none;
     position: fixed;
@@ -331,8 +330,7 @@ body[data-demo-admin="false"] .admin-only { display: none !important; }
     }
 }
 
-/* ==================== ACCESSIBILITY: FOCUS & REDUCED MOTION ==================== */
-/* visible focus for keyboard users */
+/*  ACCESSIBILITY  */
 :focus-visible {
     outline: 3px solid var(--accent-color);
     outline-offset: 3px;
@@ -371,7 +369,7 @@ body[data-demo-admin="false"] .admin-only { display: none !important; }
     color: var(--text-primary);
 }
 
-/* ==================== FORMS ==================== */
+/*  FORMS */
 .add-item-form {
     max-width: 600px;
 }
@@ -446,7 +444,7 @@ body[data-demo-admin="false"] .admin-only { display: none !important; }
     transform: scale(0.98);
 }
 
-/* ==================== CART SIDEBAR ==================== */
+/*  CART SIDEBAR  */
 .cart-sidebar {
     position: fixed;
     top: 0;
@@ -635,7 +633,7 @@ body[data-demo-admin="false"] .admin-only { display: none !important; }
     cursor: not-allowed;
 }
 
-/* ==================== MAIN CONTENT ==================== */
+/*  MAIN CONTENT */
 #app {
     display: flex;
     flex-direction: column;
@@ -661,7 +659,7 @@ body[data-demo-admin="false"] .admin-only { display: none !important; }
     to { opacity: 1; }
 }
 
-/* ==================== HERO SECTION ==================== */
+/*  HERO SECTION */
 .hero-section {
     text-align: center;
     padding: 4rem 2rem;
@@ -699,7 +697,7 @@ body[data-demo-admin="false"] .admin-only { display: none !important; }
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* ==================== FEATURES SECTION ==================== */
+/*  FEATURES SECTION */
 .features-section {
     margin: 3rem 0;
     max-width: 1280px;
@@ -747,7 +745,7 @@ body[data-demo-admin="false"] .admin-only { display: none !important; }
     line-height: 1.6;
 }
 
-/* ==================== CAROUSEL ==================== */
+/* CAROUSEL */
 .carousel-container {
     margin: 3rem 0;
     max-width: 1280px;
@@ -828,7 +826,7 @@ body[data-demo-admin="false"] .admin-only { display: none !important; }
     opacity: 0.9;
 }
 
-/* ==================== PRODUCTS PAGE ==================== */
+/* PRODUCTS PAGE */
 .products-container {
     max-width: 1280px;
     margin: 0 auto;
@@ -915,7 +913,7 @@ body[data-demo-admin="false"] .admin-only { display: none !important; }
     will-change: transform;
 }
 
-/* ==================== SKELETON LOADERS ==================== */
+/*  SKELETON LOADERS */
 .skeleton-card {
     pointer-events: none;
 }
@@ -968,7 +966,7 @@ body[data-demo-admin="false"] .admin-only { display: none !important; }
 input::placeholder,
 textarea::placeholder {
     color: var(--text-secondary);
-    opacity: 1; /* ensure visibility in some browsers */
+    opacity: 1;
 }
 
 .item-card:hover img {
@@ -1086,7 +1084,7 @@ textarea::placeholder {
 }
 .carousel-review-count { color: var(--text-secondary); font-size: 0.85rem; }
 
-/* Star rendering: full, half (50% filled), empty */
+/* Star rendering */
 .stars .star {
     display: inline-block;
     position: relative;
@@ -1185,7 +1183,7 @@ textarea::placeholder {
     color: var(--text-primary);
 }
 
-/* ==================== ABOUT & CONTACT PAGES ==================== */
+/*  ABOUT & CONTACT PAGES */
 .content-section {
     max-width: 800px;
     margin: 2rem auto;
@@ -1228,7 +1226,7 @@ textarea::placeholder {
     margin-top: 2rem;
 }
 
-/* ==================== NOTIFICATIONS ==================== */
+/*  NOTIFICATIONS */
 .notifications-container {
     position: fixed;
     top: 80px;
@@ -1287,7 +1285,7 @@ textarea::placeholder {
     margin-left: 1rem;
 }
 
-/* ==================== FOOTER ==================== */
+/*  FOOTER */
 footer {
     background-color: #1a1a1a;
     color: #ffffff;
@@ -1396,7 +1394,7 @@ body[data-theme="dark"] footer {
     color: var(--accent-color);
 }
 
-/* ==================== RESPONSIVE DESIGN ==================== */
+/*  RESPONSIVE DESIGN */
 @media (max-width: 768px) {
     .header-content {
         padding: 0 1rem;
@@ -1663,7 +1661,7 @@ body[data-theme="dark"] footer {
     }
 }
 
-/* ==================== ORDERS PAGE ==================== */
+/* ORDERS PAGE */
 .orders-list {
     display: grid;
     gap: 1.5rem;
@@ -1770,14 +1768,12 @@ body[data-theme="dark"] footer {
         font-size: 0.8rem;
     }
 }
-/* Checkout modal base */
 .checkout {
     max-width: 420px;
     width: 100%;
     padding: 1.25rem;
 }
 
-/* Inputs */
 .checkout input {
     width: 100%;
     padding: 0.9rem;
@@ -1791,7 +1787,6 @@ body[data-theme="dark"] footer {
     min-height: 44px;
 }
 
-/* Sections */
 .checkout-section {
     margin-bottom: 1.25rem;
 }
@@ -1801,7 +1796,7 @@ body[data-theme="dark"] footer {
     margin-bottom: 0.5rem;
 }
 
-/* Checkout summary (order total) */
+/* Checkout summary */
 .checkout-summary {
     background-color: var(--bg-primary);
     border-radius: 8px;
@@ -1816,7 +1811,6 @@ body[data-theme="dark"] footer {
     margin: 0;
 }
 
-/* Success modal */
 .modal-content.success {
     text-align: center;
     max-width: 400px;
@@ -1848,7 +1842,6 @@ body[data-theme="dark"] footer {
     font-size: 0.95rem;
 }
 
-/* Card row */
 .card-row {
     display: flex;
     gap: 0.75rem;
@@ -1872,7 +1865,6 @@ body[data-theme="dark"] footer {
     text-align: center;
 }
 
-/* Secure note (trust signal below CTA) */
 .secure-note {
     text-align: center;
     font-size: 0.8rem;
@@ -1881,7 +1873,7 @@ body[data-theme="dark"] footer {
     margin-bottom: 0;
 }
 
-/* Express payment buttons (Apple Pay, Google Pay) */
+/* Express payment buttons */
 .express-payments {
     display: flex;
     gap: 0.75rem;
@@ -1933,11 +1925,11 @@ body[data-theme="dark"] footer {
     }
 
     .modal-content.checkout {
-        padding-bottom: 5rem; /* space for sticky CTA */
+        padding-bottom: 5rem; 
     }
 }
 
-/* ==================== ADMIN ANALYTICS ==================== */
+/* ADMIN ANALYTICS */
 .stats-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -2073,4 +2065,3 @@ body[data-theme="dark"] footer {
 #orders-list button:hover {
     background-color: var(--bg-primary);
 }
-
